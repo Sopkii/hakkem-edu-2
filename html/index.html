@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>js_task</title>
+  </head>
+  <body>
+    <header class="title-container">
+      <span class="title">Personal Information</span>
+    </header>
+
+    <div class="container">
+      <article>
+        <div class="form-section">
+          <header class="headline">
+            <img
+              src="/assets/ChatGPT Image Aug 17, 2025, 05_34_52 PM.png"
+              alt="Basic Information"
+              style="width: 50px; height: 50px"
+            />
+            <span>Basic Information</span>
+          </header>
+          <div class="separate-line"></div>
+
+          <div class="input-att-title">Name <span class="star">*</span></div>
+          <div class="first-line">
+            <div class="input-att">
+              <input type="text" placeholder="First Name" />
+            </div>
+            <div class="input-att">
+              <input type="text" placeholder="Second Name" />
+            </div>
+            <div class="input-att">
+              <input type="text" placeholder="Third Name" />
+            </div>
+            <div class="input-att">
+              <input type="text" placeholder="Last Name" />
+            </div>
+          </div>
+
+          <div class="second-line">
+            <div class="input-att">
+              <div class="input-label">
+                National ID <span class="star">*</span>
+              </div>
+              <input type="text" placeholder="0123456789" />
+            </div>
+            <div class="input-att">
+              <div class="input-label">Gender <span class="star">*</span></div>
+              <select>
+                <option>Select option</option>
+                <option>Male</option>
+                <option>Female</option>
+              </select>
+            </div>
+            <div class="input-att">
+              <div class="input-label">
+                Birth Country <span class="star">*</span>
+              </div>
+              <select>
+                <option>Select option</option>
+                <option>Jordan</option>
+                <option>Palestine</option>
+                <option>Syria</option>
+                <option>Lebanon</option>
+                <option>Egypt</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="input-att">
+              <div class="input-label">
+                Marital Status <span class="star">*</span>
+              </div>
+              <div class="radio-group">
+                <label
+                  ><input
+                    class="radio-input"
+                    type="radio"
+                    name="marital"
+                    value="single"
+                    checked
+                  />
+                  Single</label
+                >
+                <label
+                  ><input
+                    class="radio-input"
+                    type="radio"
+                    name="marital"
+                    value="married"
+                  />
+                  Married</label
+                >
+              </div>
+            </div>
+          </div>
+          <div class="third-line"></div>
+        </div>
+
+        <div class="form-section">
+          <header class="headline">
+            <img
+              src="\assets\0b04a99d-d5ac-4b66-8640-e95c7c3cca94.png"
+              alt="Contact Information"
+              style="width: 50px; height: 50px"
+            />
+            <span>Contact Information</span>
+          </header>
+          <div class="separate-line"></div>
+
+          <div class="contact-line">
+            <div class="input-att">
+              <div class="input-label">Country <span class="star">*</span></div>
+              <select>
+                <option>Jordan</option>
+                <option>Palestine</option>
+                <option>Syria</option>
+                <option>Lebanon</option>
+                <option>Egypt</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="input-att">
+              <div class="input-label">Governorate</div>
+              <select id="governorate">
+                <option>Amman</option>
+                <option>Irbid</option>
+                <option>Zarqa</option>
+                <option>Balqa</option>
+                <option>Madaba</option>
+                <option>Karak</option>
+                <option>Tafilah</option>
+                <option>Ma'an</option>
+                <option>Aqaba</option>
+                <option>Jerash</option>
+                <option>Ajloun</option>
+                <option>Mafraq</option>
+              </select>
+            </div>
+            <div class="input-att">
+              <div class="input-label">
+                Phone Number <span class="star">*</span>
+              </div>
+              <input type="tel" placeholder="0123456789" />
+            </div>
+            <div class="input-att">
+              <div class="input-label">Email</div>
+              <input type="email" placeholder="example@example.com" />
+            </div>
+          </div>
+          <div class="forth-line"></div>
+        </div>
+
+        <div class="btns">
+          <button type="submit" class="btn-submit">Submit</button>
+          <button type="reset" class="btn-reset">Reset</button>
+        </div>
+      </article>
+    </div>
+
+    <footer>
+      <span>Copyright © 2023 EHS Company S.L. All rights reserved</span>
+    </footer>
+
+    <script src="/javascript/script.js"></script>
+  </body>
+</html>
