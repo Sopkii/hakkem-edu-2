@@ -35,25 +35,36 @@ maritalRadios.forEach((radio) => {
 
 const governorateSelect = document.querySelector("#governorate");
 const forthLine = document.querySelector(".forth-line");
+
 governorateSelect.addEventListener("change", () => {
-  const value = governorateSelect.value;
-
   forthLine.innerHTML = "";
+  if (!governorateSelect.value) return;
 
-  if (value) {
-    const areaInput = document.createElement("input");
-    createElementt(areaInput, "text", "Area");
+  const areaInput = document.createElement("input");
+  createElementt(areaInput, "text", "Area");
+  forthLine.appendChild(areaInput);
 
-    const streetInput = document.createElement("input");
-    createElementt(streetInput, "text", "Street Name");
+  areaInput.addEventListener("input", () => {
+    if (
+      areaInput.value.trim() &&
+      !forthLine.querySelector('input[placeholder="Street Name"]')
+    ) {
+      const streetInput = document.createElement("input");
+      createElementt(streetInput, "text", "Street Name");
+      forthLine.appendChild(streetInput);
 
-    const buildingInput = document.createElement("input");
-    createElementt(buildingInput, "text", "Building Number");
-
-    forthLine.appendChild(areaInput);
-    forthLine.appendChild(streetInput);
-    forthLine.appendChild(buildingInput);
-  }
+      streetInput.addEventListener("input", () => {
+        if (
+          streetInput.value.trim() &&
+          !forthLine.querySelector('input[placeholder="Building Number"]')
+        ) {
+          const buildingInput = document.createElement("input");
+          createElementt(buildingInput, "text", "Building Number");
+          forthLine.appendChild(buildingInput);
+        }
+      });
+    }
+  });
 });
 
 const btnReset = document.querySelector(".btn-reset");
